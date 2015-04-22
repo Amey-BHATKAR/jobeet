@@ -52,7 +52,7 @@ class jobActions extends sfActions
 	{
 	  $this->jobeet_job = $this->getRoute()->getObject();
 	  
-	  $this->getUser()->addJobToHistory($this->job);
+	  $this->getUser()->addJobToHistory($this->jobeet_job);
 	    
 	}
 

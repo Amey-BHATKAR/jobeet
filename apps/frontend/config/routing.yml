@@ -27,8 +27,6 @@ affiliate:
     actions:        [new, create]
     object_actions: { wait: get }
     prefix_path:    /:sf_culture/affiliate
-  requirements:
-    sf_culture: (?:fr|en)
  
 category:
   url:     /:sf_culture/category/:slug.:sf_format
@@ -54,7 +52,6 @@ job:
     prefix_path:    /:sf_culture/job
   requirements:
     token: \w+
-    sf_culture: (?:fr|en)
  
 job_show_user:
   url:     /:sf_culture/job/:company_slug/:location_slug/:id/:position_slug
