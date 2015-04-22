@@ -33,3 +33,8 @@ all:
 
     # Enable the database manager
     use_database:           true
+    
+    #Enabling i18n and setting utf-8 charset, standard helpers in templates
+    i18n: true
+    charset: utf-8
+    standard_helpers: [Partial, Cache, I18N]
